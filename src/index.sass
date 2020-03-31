@@ -1,5 +1,7 @@
 $gray-color: #e5e5e5
 $gray-color-2: #f1f1f1
+$gray-color-3: #7c7c7c
+$white: #fff
 $sidebar-color: $gray-color
 
 *
@@ -8,10 +10,12 @@ $sidebar-color: $gray-color
     outline: none
     box-sizing: border-box
     list-style: none
+    font-family: 'Roboto', sans-serif
+    font-size: 14px
 
 body
     margin: 0
-    font-family: 'Roboto', sans-serif
+
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
 
@@ -28,9 +32,6 @@ body
     &__sidebar
         width: 220px
         height: 100%
-        padding: 10px 20px
+        padding: 60px 20px
         background-color: $sidebar-color
         border-right: 1px solid $gray-color-2
-    &__list
-        i
-            margin-right: 10px
