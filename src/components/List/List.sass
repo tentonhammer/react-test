@@ -1,0 +1,48 @@
+$gray-color: #e5e5e5
+$gray-color-2: #f1f1f1
+$gray-color-3: #7c7c7c
+$white: #fff
+$sidebar-color: $gray-color
+$green: #42b883
+$blue: #64c4ed
+$pink: #ffbbcc
+$light-green: #b6e6bd
+$light-gray: #c9d1d3
+
+.list
+    &:first-child
+        margin-bottom: 30px
+    li
+        display: flex
+        align-items: center
+        padding: 10px 12px
+        cursor: pointer
+        &.active
+            border-radius: 4px
+            background: $white
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05)
+        span
+            letter-spacing: 0.2px
+        & > i
+            display: inline-flex
+            margin-right: 10px
+            svg
+                path
+                    fill: $gray-color-3
+
+.badge
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    position: relative
+    left: 2px
+    &--green
+        background-color: $green
+    &--blue
+        background-color: $blue
+    &--pink
+        background-color: $pink
+    &--light-green
+        background-color: $light-green
+    &--light-gray
+        background-color: $light-gray
